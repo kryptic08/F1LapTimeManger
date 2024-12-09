@@ -223,18 +223,17 @@ k {
     }
 
     .lapse {
-        width: 180px;
-        left: 120px;
+        display: flex;
+        width: 100%;
         top: 900px;
     }
 
     .order {
         width: 100%;
-        top: 1150px;
+        top: 1250px;
     }
     .traver {
-        top: 900px;
-        left: 365px;
+        top: 1000px;
         width: 90%;
     }
 
