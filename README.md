@@ -1,4 +1,4 @@
-﻿# Project Overview:   
+﻿# Project Overview: DSA FINAL PROJECT/EXAM  
 
 ## Project Name: F1 Lap Time Manager
 ### Developer: Kirby, Zues, Jian, James
