@@ -7,8 +7,7 @@ body {
     background-size: cover; /* Optional: Use a background image for the glass effect */
 }
 
-
-
+/* Container Styles */
 .containers {
     width: 100%;
     max-width: 1900px;
@@ -21,6 +20,7 @@ body {
     backdrop-filter: blur(10px); /* Adds the glassmorphism effect */
 }
 
+/* Input and container styles */
 .inputs, .traver, .lapse, .container {
     background-color: rgba(255, 85, 0, 0.5); /* Semi-transparent background */
     border-radius: 10px;
@@ -30,13 +30,14 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
 }
 
+/* Positioning of elements */
 .inputs {
     position: absolute;
     top: 270px;
-    left: 50%; /* Center horizontally */
+    left: 50%;
     transform: translateX(-50%);
-    width: 80%; /* Use percentage for responsive width */
-    max-width: 500px; /* Max width */
+    width: 80%;
+    max-width: 500px;
 }
 
 .traver {
@@ -52,29 +53,29 @@ body {
 .lapse {
     position: absolute;
     top: 380px;
-    left: 80%; /* Center horizontally */
+    left: 80%;
     transform: translateX(-50%);
     width: 80%;
     max-width: 300px;
 }
-.order{
 
+.order {
     background-color: #00347c;
     border-radius: 10px;
     padding: 10px;
     position: absolute;
     top: 445px;
-    left: 50%; /* Center horizontally */
+    left: 50%;
     transform: translateX(-50%);
     width: 80%;
     max-width: 480px;
-    
 }
-h1, h2, ul, p{
+
+h1, h2, ul, p {
     color: white;
 }
 
-h5{
+h5 {
     color: white;
     font-size: 15px;
     font-weight: bold;
@@ -82,6 +83,7 @@ h5{
     top: 490px;
     left: 40%;
 }
+
 h1 {
     text-align: left;
 }
@@ -95,7 +97,7 @@ button {
     background-color: #00347c;
     color: white;
     border: none;
-    opacity: 0.8; /* Add slight transparency */
+    opacity: 0.8;
 }
 
 .container {
@@ -106,20 +108,20 @@ button {
     border-radius: 10px;
     padding: 10px;
     max-width: 500px;
-    width: 80%; /* Responsive width */
+    width: 80%;
 }
 
 button:hover {
     background-color: #003948;
-    opacity: 1; /* Full opacity on hover */
+    opacity: 1;
 }
 
 input[type="number"] {
     padding: 10px;
     margin: 10px;
-    width: 100%; /* Full width for input */
-    max-width: 200px; /* Max width */
-    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent input */
+    width: 100%;
+    max-width: 200px;
+    background-color: rgba(255, 255, 255, 0.5);
     border: none;
     border-radius: 5px;
 }
@@ -140,9 +142,9 @@ p {
     font-weight: 200;
     font-size: 35px;
     color: aliceblue;
-
 }
-k{
+
+k {
     position: absolute;
     top: 20px;
     left: 300px;
@@ -179,9 +181,9 @@ k{
     padding: 5px;
     max-width: 1000px;
     height: 70px;
-    background-color: rgba(255, 85, 0, 0.5); /* Semi-transparent background */
-    border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
-    backdrop-filter: blur(8px); /* Frosted glass blur */
+    background-color: rgba(255, 85, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
     text-align: left;
 }
 
@@ -193,12 +195,12 @@ k{
     background-color: #00347c;
     color: white;
     border: none;
-    opacity: 0.8; /* Add slight transparency */
+    opacity: 0.8;
 }
 
 .navigation button:hover {
     background-color: #003948;
-    opacity: 1; /* Full opacity on hover */
+    opacity: 1;
 }
 
 /* Mobile and tablet responsiveness */
@@ -209,7 +211,7 @@ k{
         transform: translateX(-50%);
         top: auto;
     }
-    
+
     .traver {
         left: 50%;
         width: 90%;
@@ -241,19 +243,26 @@ k{
     }
 }
 
-/* Very small devices like phones */
+/* Small devices like phones */
 @media (max-width: 480px) {
     .inputs, .traver, .lapse, .container {
         width: 95%;
+        left: 50%;
+        transform: translateX(-50%);
+        top: auto;
+        position: relative;
     }
 
     button {
         padding: 8px 16px;
+        width: 100%;
+        margin: 5px 0;
     }
 
     input[type="number"] {
         padding: 8px;
         margin: 8px 0;
+        width: 100%;
     }
 
     #lapTimes li {
@@ -262,9 +271,27 @@ k{
 
     .navigation {
         width: 95%;
+        top: auto;
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .Intro {
+        width: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 20px;
+    }
+
+    h5 {
+        top: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 12px;
     }
 }
 
 .traver.heap-operations {
-    top: 200px; /* Adjust the top position to avoid overlap */
+    top: 200px; /* Adjust top position */
 }
