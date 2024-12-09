@@ -204,7 +204,7 @@ k {
 }
 
 /* Mobile and tablet responsiveness */
-@media (max-width: 780px) {
+@media (max-width: 650px) {
     .inputs, .traver, .lapse, .container {
         width: 90%;
         left: 50%;
