@@ -4,7 +4,7 @@ body {
     margin: 0;
     box-sizing: border-box;
     background: url('your-background-image.jpg') no-repeat center center fixed;
-    background-size: cover; /* Optional: Use a background image for the glass effect */
+    background-size: cover; /* Ensures the image covers the area without stretching */
 }
 
 /* Container Styles */
@@ -241,6 +241,22 @@ k {
         transform: translateX(-50%);
         width: 90%;
     }
+
+    /* Adjust vertical spacing between elements */
+    .inputs, .traver, .lapse, .order, .container, .Intro, h5 {
+        margin-bottom: 20px;
+    }
+
+    /* Reduce the font size of the introduction text */
+    .Intro {
+        font-size: 18px;
+    }
+
+    /* Adjust the position of the `k` element */
+    k {
+        top: 10px;
+        left: 10px;
+    }
 }
 
 /* Small devices like phones */
@@ -250,7 +266,6 @@ k {
         left: 50%;
         transform: translateX(-50%);
         top: auto;
-        position: relative;
     }
 
     button {
@@ -260,38 +275,7 @@ k {
     }
 
     input[type="number"] {
-        padding: 8px;
-        margin: 8px 0;
-        width: 100%;
-    }
+        padding: 8
 
-    #lapTimes li {
-        padding: 4px;
     }
-
-    .navigation {
-        width: 95%;
-        top: auto;
-        right: auto;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .Intro {
-        width: 90%;
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 20px;
-    }
-
-    h5 {
-        top: auto;
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 12px;
-    }
-}
-
-.traver.heap-operations {
-    top: 200px; /* Adjust top position */
 }
