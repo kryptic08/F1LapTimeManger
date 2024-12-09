@@ -204,7 +204,7 @@ k {
 }
 
 /* Mobile and tablet responsiveness */
-@media (max-width: 768px) {
+@media (max-width: 1080px) {
     .inputs, .traver, .lapse, .container {
         width: 90%;
         left: 50%;
@@ -212,34 +212,50 @@ k {
         top: auto;
     }
 
-    .traver {
-        left: 50%;
+    .container {
+        width: 90%;
+        top: 450px;
+    }
+
+    .inputs {
+        top: 700px;
         width: 90%;
     }
 
     .lapse {
-        top: 600px;
+        width: 180px;
+        left: 120px;
+        top: 900px;
     }
+
+    .order {
+        width: 100%;
+        top: 1150px;
+    }
+    .traver {
+        top: 900px;
+        left: 365px;
+        width: 90%;
+    }
+
 
     button {
         width: 100%;
         margin: 5px 0;
     }
 
-    input[type="number"] {
-        width: 100%;
-    }
 
     h1, h2 {
         text-align: center;
     }
 
     .navigation {
-        top: auto;
+        top: 350px;
         right: auto;
         left: 50%;
         transform: translateX(-50%);
         width: 90%;
+        font-size: 10px;
     }
 
     /* Adjust vertical spacing between elements */
