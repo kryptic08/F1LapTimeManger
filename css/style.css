@@ -1,0 +1,270 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    margin: 0;
+    box-sizing: border-box;
+    background: url('your-background-image.jpg') no-repeat center center fixed;
+    background-size: cover; /* Optional: Use a background image for the glass effect */
+}
+
+
+
+.containers {
+    width: 100%;
+    max-width: 1900px;
+    max-height: 550px;
+    padding: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+    border-radius: 10px;
+    background-color: rgba(255, 30, 0, 0.852); /* Semi-transparent black background */
+    margin: 0 auto;
+    backdrop-filter: blur(10px); /* Adds the glassmorphism effect */
+}
+
+.inputs, .traver, .lapse, .container {
+    background-color: rgba(255, 85, 0, 0.5); /* Semi-transparent background */
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    backdrop-filter: blur(8px); /* Frosted glass blur */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+}
+
+.inputs {
+    position: absolute;
+    top: 270px;
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%);
+    width: 80%; /* Use percentage for responsive width */
+    max-width: 500px; /* Max width */
+}
+
+.traver {
+    padding: 10px;
+    position: absolute;
+    top: 120px;
+    left: 80%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 300px;
+}
+
+.lapse {
+    position: absolute;
+    top: 380px;
+    left: 80%; /* Center horizontally */
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 300px;
+}
+.order{
+
+    background-color: #00347c;
+    border-radius: 10px;
+    padding: 10px;
+    position: absolute;
+    top: 445px;
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 480px;
+    
+}
+h1, h2, ul, p{
+    color: white;
+}
+
+h5{
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    position: absolute;
+    top: 490px;
+    left: 40%;
+}
+h1 {
+    text-align: left;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    display: inline-block;
+    background-color: #00347c;
+    color: white;
+    border: none;
+    opacity: 0.8; /* Add slight transparency */
+}
+
+.container {
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 500px;
+    width: 80%; /* Responsive width */
+}
+
+button:hover {
+    background-color: #003948;
+    opacity: 1; /* Full opacity on hover */
+}
+
+input[type="number"] {
+    padding: 10px;
+    margin: 10px;
+    width: 100%; /* Full width for input */
+    max-width: 200px; /* Max width */
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent input */
+    border: none;
+    border-radius: 5px;
+}
+
+p {
+    font-weight: bold;
+}
+
+.Intro {
+    text-align: justify;
+    display: flex;
+    position: absolute;
+    top: 150px;
+    left: 40%;
+    justify-content: center;
+    width: 650px;
+    margin-top: 20px;
+    font-weight: 200;
+    font-size: 35px;
+    color: aliceblue;
+
+}
+k{
+    position: absolute;
+    top: 20px;
+    left: 300px;
+    font-weight: bold;
+    color: white;
+}
+
+#lapTimes li {
+    padding: 5px;
+    margin: 2px;
+    cursor: pointer;
+}
+
+#lapTimes li:hover {
+    background-color: lightgray;
+}
+
+#lapTimes li.selected {
+    background-color: yellow;
+}
+
+#searchResult {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 20px;
+    right: 100px;
+    border-radius: 10px;
+    padding: 5px;
+    max-width: 1000px;
+    height: 70px;
+    background-color: rgba(255, 85, 0, 0.5); /* Semi-transparent background */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+    backdrop-filter: blur(8px); /* Frosted glass blur */
+    text-align: left;
+}
+
+.navigation button {
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #00347c;
+    color: white;
+    border: none;
+    opacity: 0.8; /* Add slight transparency */
+}
+
+.navigation button:hover {
+    background-color: #003948;
+    opacity: 1; /* Full opacity on hover */
+}
+
+/* Mobile and tablet responsiveness */
+@media (max-width: 768px) {
+    .inputs, .traver, .lapse, .container {
+        width: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+        top: auto;
+    }
+    
+    .traver {
+        left: 50%;
+        width: 90%;
+    }
+
+    .lapse {
+        top: 600px;
+    }
+
+    button {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    input[type="number"] {
+        width: 100%;
+    }
+
+    h1, h2 {
+        text-align: center;
+    }
+
+    .navigation {
+        top: auto;
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+    }
+}
+
+/* Very small devices like phones */
+@media (max-width: 480px) {
+    .inputs, .traver, .lapse, .container {
+        width: 95%;
+    }
+
+    button {
+        padding: 8px 16px;
+    }
+
+    input[type="number"] {
+        padding: 8px;
+        margin: 8px 0;
+    }
+
+    #lapTimes li {
+        padding: 4px;
+    }
+
+    .navigation {
+        width: 95%;
+    }
+}
+
+.traver.heap-operations {
+    top: 200px; /* Adjust the top position to avoid overlap */
+}
