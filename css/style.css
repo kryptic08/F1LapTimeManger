@@ -204,7 +204,7 @@ k {
 }
 
 /* Mobile and tablet responsiveness */
-@media (max-width: 650px) {
+@media (max-width: 450px) {
     .inputs, .traver, .lapse, .container {
         width: 90%;
         left: 50%;
@@ -275,22 +275,3 @@ k {
 }
 
 /* Small devices like phones */
-@media (max-width: 480px) {
-    .inputs, .traver, .lapse, .container {
-        width: 95%;
-        left: 50%;
-        transform: translateX(-50%);
-        top: auto;
-    }
-
-    button {
-        padding: 8px 16px;
-        width: 100%;
-        margin: 5px 0;
-    }
-
-    input[type="number"] {
-        padding: 8
-
-    }
-}
