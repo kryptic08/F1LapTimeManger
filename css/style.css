@@ -212,13 +212,27 @@ k {
         top: auto;
     }
 
+    .prop {
+        
+        z-index: -1;
+        position: fixed;
+        width: 1200px;
+        top: 160px;
+        left: 60px;
+
+    }
+
     .h1{
         font-size: 2px;
     }
 
     .Intro {
+        position: fixed;
+        top: 290px;
+        left: 65px;
+        color: #ffffffee;
         font-size: 1px;
-        width: 230px;
+        width: 290px;
     }
     .containers {
         width: 100%;
@@ -227,27 +241,31 @@ k {
     }
     .container {
         width: 90%;
-        top: 450px;
+        top: 650px;
     }
 
     .inputs {
-        top: 700px;
+        top: 1120px;
         width: 90%;
     }
 
     .lapse {
+        text-size-adjust: 8px;
         display: flex;
+        padding: 10px;
         width: 100%;
+        max-width: 370px;
         top: 900px;
     }
 
     .order {
-        width: 100%;
-        top: 1250px;
+        width: 90%;
+        top: 1550px;
     }
     .traver {
-        top: 1000px;
+        top: 1315px;
         width: 100%;
+        max-width: 370px;
     }
 
 
@@ -258,11 +276,11 @@ k {
 
 
     h1, h2 {
-        text-align: center;
+        text-align: left;
     }
 
     .navigation {
-        top: 350px;
+        top: 550px;
         right: auto;
         left: 50%;
         transform: translateX(-50%);
